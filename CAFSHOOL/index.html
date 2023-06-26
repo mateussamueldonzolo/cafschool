@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAF</title>
+    <!--CSS FOLDER-->
+    <link rel="idcon" href="img/logo-light.svg">
+    <link rel="stylesheet" href="css/tablinks.css">
+    <link rel="stylesheet" href="css/toggle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="html/meet/css/all.min.css">
+    <script src="html/meet/js/all.js"></script>
+    <!--RESPONSIVE-->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" width="20%" alt="Logo" srcset="">
+        </div>
+        <div class="menu">
+            <ul>
+               <a href="#"><li>Home</li></a>
+               <a href="portfolio.html"><li>Portifolio</li></a>
+               <a href="cursos.html"><li>Cursos</li></a> 
+               <a href=""><li class="drop">Meet
+                    <div class="drop-down">
+                        <a href="html/meet/index.html">Video Conferência</a>
+                        <a href="#">Falta dos professor</a>
+                        <a href="#">Adiconar matriculas</a>
+                    </div>
+                </li></a> 
+                <a href="exames.html"><li>Blogs</li></a>
+            </ul>
+        </div>
+        <div class="icon">
+           <a href="html/autent/login.html"><button type="submit"><i class="
+                fas fa-user"></i> Estudante </button>
+            </a> 
+         </div>
+    </header>
+    <div class="sms" id="mysms">
+        <div class="sms-logo">
+            <p style="display: flex; position:static; justify-content: right; cursor: pointer;" onclick="fechar()">X</p>
+            <img src="img/logo-light.svg" width="50%"><br>
+        </div>
+        <div class="textarea">
+            <form action="">
+                <textarea name="sms" id="" placeholder="Escreva a sua mensagem aqui..." cols="40" rows="12"></textarea>
+                <button><img src="img/email.png" alt=""></button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function abrir() {
+            document.getElementById("mysms").style.height="480px";
+            document.getElementById("mysms").style.border = "1px solid #ffffff41";
+        }
+    
+        function fechar() {
+            document.getElementById("mysms").style.height="0";
+            document.getElementById("mysms").style.border = "0px solid #ffffff41";
+        }
+    </script>
+    <div class="chat">
+        <img  onclick="abrir()" src="img/e4.png" width="100%" alt="">
+    </div>
+    <section>
+        <div class="banner">
+            <div class="section-l">
+                <h1> Capacite as sua habilidades e dinamico mediatico</h1>
+                <p>Normas e ações para o aprendizado, seja especial
+                    durante jormas Normas e ações para o aprendizado, seja especial
+                    durante jormas
+                </p><br>
+                <button type="submit"> Get started <i class="fas fa-arrow-right"></i> </button>
+                <a href="#"><button type="submit" title="Podcast"> <i class="fas fa-video"></i> </button> </a>  
+            </div>
+        </div>
+        <div class="about">
+            <div class="about-us">
+             
+            </div>
+            <div class="about-us">
+                <h1>About</h1>
+                <div class="eq"></div>
+                <p>Colégio Árvore da felicidade 
+                    We create diverse, complex, web and mobile solutions 
+                    for any business need. With us you 
+                    get quality software and perfect service every time.
+                </p><br>
+                <button>Ver mais</button>
+            </div>
+        </div>
+        <!--CARD-->
+        <div class="card-per">
+            <div class="card-per1">
+                <div class="card-img">
+                    <img src="img/e1.png" alt="">
+                </div>
+                <div class="card-per-p">
+                    <strong>5K</strong>
+                    <p>Online courses</p>
+                </div>
+            </div>
+            <div class="card-per1">
+                <div class="card-img">
+                    <img src="img/e2.png" alt="">
+                </div>
+                <div class="card-per-p">
+                    <strong>150K</strong>
+                    <p>Online courses</p>
+                </div>
+            </div>
+            <div class="card-per1">
+                <div class="card-img">
+                    <img src="img/e3.png" alt="">
+                </div>
+                <div class="card-per-p">
+                    <strong>10K</strong>
+                    <p>Online courses</p>
+                </div>
+            </div>
+            <div class="card-per1">
+                <div class="card-img">
+                    <img src="img/e4.png" alt="">
+                </div>
+                <div class="card-per-p">
+                    <strong>124K</strong>
+                    <p>Online courses</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <aside>
+        <div class="tittle">
+            <h1>Portifolio</h1>
+            <div class="r"></div>
+            <p>Aqui encontraras os nossos portfolio</p>
+        </div>
+        <!--SERVICE-->
+        <div class="service">
+             <div class="tab" style="text-align: center;">
+                <span class="tablink" onclick="openPage('Drama', this, '#13a818')" id="defaultOpen">ALL</span>
+                <span class="tablink" onclick="openPage('Accão', this, '#13a818')">BRANDING</span>
+                <span class="tablink" onclick="openPage('Romance', this, '#13a818')">DIGITAL</span>
+                <span class="tablink" onclick="openPage('Ciência', this, '#13a818')">PACKAGING</span>
+            </div>
+            <div id="Drama" class="tabcontent">
+                <div class="grid">
+                    <div class="grid-img">
+                        <figcaption>
+                            <h3>Informática</h3>
+                            <p>Matérias (Vídeos Aulas * PDF)</p>
+                            <button type="submit">MONEY</button>
+                        </figcaption>
+                    </div>
+                    <div class="grid-img">
+                        <figcaption>
+                            <h3>Matemática</h3>
+                            <p>Matérias (Vídeos Aulas * PDF)</p>
+                            <button type="submit">MONEY</button>
+                        </figcaption>
+                    </div>
+                    <div class="grid-img">
+                        <figcaption>
+                            <h3>TLP</h3>
+                            <p>Matérias (Vídeos Aulas * PDF)</p>
+                            <button type="submit">MONEY</button>
+                        </figcaption>
+                    </div>
+                    <div class="grid-img">
+                        <figcaption>
+                            <h3>O.G.I</h3>
+                            <p>Matérias (Vídeos Aulas * PDF)</p>
+                            <button type="submit">Ver Mais <i class="fas fa-arrow"></i></button>
+                        </figcaption>
+                    </div>
+                    <div class="grid-img">
+                        <figcaption>
+                            <h3>Sistemas Digitais</h3>
+                            <p>Matérias (Vídeos Aulas * PDF)</p>
+                            <button type="submit">MONEY</button>
+                        </figcaption>
+                    </div>
+                    <div class="grid-img">
+                        <figcaption>
+                            <h3>Eletronica & Telecomunição</h3>
+                            <p>Matérias (Vídeos Aulas * PDF)</p>
+                            <button type="submit">MONEY</button>
+                        </figcaption>
+                    </div>
+                </div>
+            </div>
+            <div id="Accão" class="tabcontent">
+                <div class="grid-img">
+                        <img src="itens/im.png">
+                    </div>
+            </div>
+            <div id="Romance" class="tabcontent">
+                <div class="grid-img" style="text-align:center;">
+                        <img src="itens/im2.png">
+                    </div>
+            </div>
+            <div id="Ciência" class="tabcontent" style="text-align:center;">
+                <div class="grid-img">
+                        <img src="itens/im3.png">
+                </div>
+            </div>
+        </div>
+        <!--EXPERIENCE-->
+        <!--COMENTÁRIOS-->
+ 
+        <div class="tittle" style="padding-top: 3rem;">
+            <h1>Blogs</h1>
+            <div class="r"></div>
+            <p>Encontraras as nossas breves descrisão dos nossos cursos</p>
+        </div>
+            <!--
+            <div class="comen">
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+            </div>-->
+        </div>
+
+        <!--Banner PTOF-->
+        <!--BLOGS-->
+        <div class="blogs">
+            <div class="blogs-1">
+                <div class="blogs-photo"  id="ph1"></div>
+                <div class="blogs-text">
+                    <div class="separator">
+                        <p>Markeiteiro</p>
+                        <span>12 May 23</span>
+                    </div>
+                    <div class="separator2">
+                        <strong>Manuel Bernardo</strong>
+                        <h2>How to check the website before releasing?</h2>
+                        <span>Teste o meu mundo a 
+                            capacidade os alunos tirarem duvida
+                        </span><br>
+                    </div><br>
+                    <div class="prof">
+                        <i class="fas fa-share"></i><span>45</span>
+                        <i class="fas fa-heart" style="color: #13a818;"></i><span>5</span>
+                    </div><br>
+                </div>
+            </div>
+            <div class="blogs-1">
+                <div class="blogs-photo"  id="ph1"></div>
+                <div class="blogs-text">
+                    <div class="separator">
+                        <p>Markeiteiro</p>
+                        <span>12 May 23</span>
+                    </div>
+                    <div class="separator2">
+                        <strong>Manuel Bernardo</strong>
+                        <h2>How to check the website before releasing?</h2>
+                        <span>Teste o meu mundo a 
+                            capacidade os alunos tirarem duvida
+                        </span><br>
+                    </div><br>
+                    <div class="prof">
+                        <i class="fas fa-share"></i><span>4</span>
+                        <i class="fas fa-heart" style="color: #13a818;"></i><span>150</span>
+                    </div><br>
+                </div>
+            </div>
+            <div class="blogs-1">
+                <div class="blogs-photo"  id="ph1"></div>
+                <div class="blogs-text">
+                    <div class="separator">
+                        <p>Markeiteiro</p>
+                        <span>12 May 23</span>
+                    </div>
+                    <div class="separator2">
+                        <strong>Manuel Bernardo</strong>
+                        <h2>How to check the website before releasing?</h2>
+                        <span>Teste o meu mundo a 
+                            capacidade os alunos tirarem duvida
+                        </span><br>
+                    </div><br>
+                    <div class="prof">
+                        <i class="fas fa-share"></i><span>1</span>
+                        <i class="fas fa-heart" style="color: #13a818;"></i><span>5</span>
+                    </div><br>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!--SPEAKER-->
+    <div class="coment">
+        <div class="fet" style=" margin: auto; 
+        width: 50%; text-align: center;">
+            <h1>Os nossos feedbacks</h1>
+            <div class="r"></div><br>
+            <p>Comentários dos nossos estudantes</p>
+         </div>   
+    <div class="onlycoment">
+            <div class="coment-one">
+                <img src="img/u2.png" width="90px">
+                <h3>Samuel Soares</h3>
+                <span style="color: #034d05;"> 
+                    Estudante
+                </span>
+                <p style=" 
+                text-align: left;
+                line-height: 2rem;
+                color:#888888">Eu amo bastante essa página, é uma honra e alegria 
+                    participar nas aulas ❤🙏
+                    e estar prol e. 🥰 VERY GOOD
+                    Desejo todo de bom na aplicação.
+                </p>
+            </div>
+            <div class="coment-one">
+                <img src="img/u2.png" width="90px">
+                <h3>Samuel Soares</h3>
+                <span style="color: #034d05;"> 
+                    Estudante
+                </span>
+                <p style="
+                text-align: left;
+                line-height: 2rem;
+                color:#888888">Eu amo bastante essa página, é uma honra e alegria 
+                    participar nas aulas ❤🙏
+                    e estar prol e. 🥰 VERY GOOD
+                    Desejo todo de bom na aplicação.
+                </p>
+            </div>
+            <div class="coment-one">
+                <img src="img/u3.png" width="90px">
+                <h3>Seniamara Benedito</h3>
+                <span style="color: #034d05;"> 
+                    Marketeiro & Estudante 
+
+                </span>
+                <p style="
+                text-align: left;
+                line-height: 2rem;
+                color:#888888">Eu amo bastante essa página, é uma honra e alegria 
+                    participar 💯 nas aulas e estar prol e. 
+                </p>
+            </div>
+            <div class="coment-one">
+                <img src="img/u1.png" width="90px">
+                <h3>Manuel Bernardo</h3>
+                <span style="color: #034d05;"> 
+                    Estudante de Informática
+                </span>
+                <p style="
+                text-align: left;
+                line-height: 2rem;
+                color:#888888">Eu amo bastante essa página, é uma honra e alegria 
+                    participar nas aulas e estar prol e espero aprender
+                    mais, nunca devemesmo parar de aprender. ✨
+                </p>
+
+            </div>
+    </div>
+
+    </div>
+    <!--FOOTET-->
+    <footer>
+        <div class="rodape" style="padding: 1rem;">
+            <h2>Colégio Árvore da Felicidade</h2>
+        </div>
+        <div class="rodape">
+            <p>Somos nós</p>
+            <a href="#"><span>FAQ</span></a><br>
+            <a href="#"><span>About</span></a><br>
+            <a href="#"><span>Created account</span></a><br>
+            <a href="#"><span>Links</span></a><br>
+        </div>
+        <div class="rodape">
+            <p>Professores</p>
+              <a href="#"><span>FAQ</span></a><br>
+            <a href="#"><span>About</span></a><br>
+            <a href="#"><span>Created account</span></a><br>
+            <a href="#"><span>Links</span></a><br>
+        </div>
+        <div class="rodape">
+            <div class="Newlastter">
+                <p>Newlastter</p>
+            </div>
+            <div class="card-rdp">
+                <div class="card-rodape">
+                    <input type="" name="" placeholder="Digite o seu email">
+                    <button type="">
+                        <img src="img/email.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="redessocias">
+                <span>Siga-nos: </span>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        
+    </footer>
+    <div class="r-line" style="padding: 2rem; background: #181D24; color: #fff">
+        <p>Copyrights ©2023 Milvanio. All rights reserved.</p>
+    </div>
+
+
+
+    <!--TABSLINK-->
+    <script>
+        function openPage(pageName,elmnt,color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+  
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+  
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+        
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+      }
+  
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+  </script>
+</body>
+</html>

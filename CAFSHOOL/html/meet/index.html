@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../img/logo-light.svg">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="js/all.js"></script>
+    <script src="js/control.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>MEETING</title>
+</head>
+<body onmousedown="cl()">
+
+<div class="chat" id="chat" onclick="tems()" style="cursor: pointer;">
+    <h1>Mensagem</h1>
+</div>
+
+    <!--MODAL-->
+    <div class="adduser" id="adduser">
+        <div class="user">
+            <h2>Add User</h2>
+            <hr>
+            <div class="opes">
+                <img src="itens/opened.png" width="11%" alt="">
+                <div class="text"><br>
+                    <span>User Folder</span>
+                </div>
+            </div>
+            <div class="opes">
+                <img src="itens/light.png" width="11%" alt="">
+                <div class="text"><br>
+                    <span>User Interface</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="splash" id="splash"> 
+        <div class="globo">
+            <img src="../../img/logo-light.svg" width="15%" alt="" srcset="">
+            <p style="font-size: 12px; color: #babbbd;">Versão 1.1</p><br>
+            <div class="pbg">
+                    <div class="pb"> </div>
+            </div>
+        </div>
+    </div>
+
+    <header id="header">
+        <div class="left">
+            <div class="logo">
+                <img src="itens/day.png" alt="" srcset="">
+            </div>
+            <div class="logotext">
+                <span >Desing Sprint Meeting</span>
+                <button type="submit"> <i class="fas fa-people-group"></i> Teams</button>
+            </div>
+        </div>
+        <div class="icones">
+            <i class="fas fa-square"></i>
+            <i class="fas fa-temperature-down"></i>
+            <i id="ativo" class="fab fa-facebook" onclick="as()" ></i>
+        </div>
+    </header>
+    <section>
+        <div class="sidebar">
+            <a href="#rerer"> <i class="fas fa-home"></i></a>
+            <a href="a.html"> <i class="fas fa-calendar-days"></i></a>
+            <a href="#"> <i class="fas fa-video"></i></a>
+            <a href="#"> <i class="fas fa-contact-card"></i></a>
+            <a href="#"> <i class="fas fa-0"></i></a>
+        </div>
+        <script>
+
+            function as(){
+                document.getElementById("chat").style.width = "360px";
+                document.getElementById("ativo").style.color = "#51B56D";
+                document.getElementById("callvideo").style.marginRight ="410px";
+                document.getElementById("header").style.marginRight ="410px";
+                document.getElementById("video").style.gridTemplateColumns = "repeat(2, 1fr)";
+                document.getElementById("video").style.transform = "translate(15px)";
+                document.getElementById("video").style.transition = ".4s";
+               
+            }
+
+        </script>
+        <div class="callvideo" id="callvideo">
+            <div class="rec">
+                <button type="submit"> <i class="fas fa-circle" style="color: #ff0000; font-size: 10px;"> </i>  Record 03:00</button>
+                <button type="submit" onclick="he()"><i class="fas fa-add"></i>  Add User</button>
+            </div>
+            <div class="video" id="video">
+                <div class="video_">
+                    <i class="fas fa-video-slash"></i>
+                </div>
+                <div class="video_">
+                    <i class="fas fa-video-slash"></i>
+                </div>
+                <div class="video_">
+                    <i class="fas fa-video-slash"></i>
+                </div>
+                <div class="video_">
+                    <i class="fas fa-video-slash"></i>
+                </div>
+                <div class="video_">
+                    <i class="fas fa-video-slash"></i>
+                </div>
+                <div class="video_">
+                    <i class="fas fa-video-slash"></i>
+                    <div class="profile">
+                        <div class="profile">
+                            <div class="circle">
+                                <span>MY</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="iconees">
+                <a href="#"> <i class="fas fa-home"></i></a>
+                <a href="#"> <i class="fas fa-microphone"></i></a>
+                <a href="#"> <i class="fas fa-phone"></i></a>
+                <a href="#"> <i class="fas fa-circle" style="color: #ff0000"></i></a>
+                <a href="#"> <i class="fas fa-money-bill-transfer"></i></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

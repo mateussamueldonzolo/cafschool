@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXTERIOR - LOGIN</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            background: #1b1824;
+            color: #e6e6e6 !important;
+        }
+
+        form{
+            margin: 50px auto;
+            animation: go-badck 1s alternate;
+        }
+
+        @keyframes go-back{
+            from{
+                transform: translate(2200px);
+            }
+        }
+
+        .card{
+            margin: auto;
+            width: 27%;
+            justify-content: center;
+            text-align: left;
+            background: #3536351a;
+            padding: 10px;
+        }
+
+        p{
+            color: #eceaea;
+        }
+
+        label{
+            color: #c4c2c2b2;
+        }
+
+        input, button{
+            padding: 1.30rem;
+            color: #868686;
+            width: 90%;
+            border: 0;
+            outline: 0;
+            border-radius: 4px;
+            background: #9b9b9b2a;
+            font-size: 15px;
+        }
+
+        input:focus{
+            outline: 2px solid #4CAF50;
+            transition: .2s ease-in-out;
+        }
+
+        ::placeholder{
+            color: #adadada3;
+        }
+
+        button{
+            margin: 20px 0 0 0;
+            width: 100%;
+            color: #d1d1d1;
+            font-weight: bolder;
+            cursor: pointer;
+            font-size: 17px;
+            background: #4CAF50;
+            border: 0;
+        }
+
+    </style>
+        <div class="card">
+            <div class="imgcard">
+                <img src="zoom_mode_60px.png" alt="">
+            </div>
+            <div class="textcard" style="display: block; text-align: center;">
+                <img src="../img/logo-light.svg" width="150px" alt="" srcset="">
+                <h1>CREDENCIAIS</h1>
+            </div><br>
+            <div class="card-group">
+                <p>Nome do estudante</p>
+                <input id="nome" type="Text" placeholder="Email">
+                <p>Nº de Processo</p>
+                <input id="num" type="number" placeholder="Senha">
+            </div>
+            <p id="texto"></p>
+            <div class="btn">
+                <a href="../../consultas.html"><button>Entrar</button></a>
+            </div>
+        </div>
+</body>
+
+
+<script>
+        var a = document.getElementById("nome").value;
+        var texto = document.getElementById("texto").innerHTML;
+        var b = parseInt(document.getElementById("num").value);
+        
+        if(a == ""){
+            texto.innerHTML = "Insira aqui o texto";
+        }
+</script>
+
+
+</html>

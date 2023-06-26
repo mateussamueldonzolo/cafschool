@@ -1,0 +1,304 @@
+body{
+    padding: 0;
+    margin: 0;
+    min-height: 120vh;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #161B20;
+    color: #fff;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #30353f;
+    border-radius: 20px;
+}
+
+.splash{
+    background: #1b1b1b;
+    position: absolute;
+    min-height: 120%;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*CHAT*/
+
+.chat{
+    background: #1F262E;
+    right: 0;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    transition: .4s ease;
+}
+
+
+/*ADDUSER*/
+
+.adduser{
+    background: #1f1f1f;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+hr{
+    border: 0.1px solid #303030;
+    margin-bottom: 1em;
+}
+
+.user{
+    margin: 15% auto;
+    padding: 1rem;
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    background: #0b0c0f;
+    text-align: center;
+    position: sticky;
+}
+
+.opes{
+    display: flex;
+    padding: 1rem;
+    background: #161920;
+    border-radius: 20px;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.text{
+    margin-left: 1rem;
+    line-height: 1em;
+}
+.globo{
+    margin: auto;
+    margin-top: 20%;
+}
+
+.pbg{
+    background: #1E232D;
+    width: 120px;
+    height: 8px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.pb{
+    background: #F16623;
+    border-radius: 50px;
+    height: 8px;
+    animation: gol 10s alternate;
+}
+
+@keyframes gol{
+    0%{
+        width: 0px;
+        animation-delay: 333ms;
+    }
+    50%{
+        width: 50px;
+    }
+    100%{
+        width: 120px;
+    }
+}
+
+
+
+header{
+    height: 40px;
+    padding: 1rem;
+    background: #161c21;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-right: 3rem;
+}
+
+.icones{
+    margin-right: 1rem;
+}
+
+#ativo:active{
+    color: #51B56D;
+}
+
+.left{
+    display: flex;
+    margin-right: 5em;
+}
+
+.left button{
+    border: 0;
+    width: 90px;
+    background: #F16623;
+    border-radius: 50px;
+    color: #fff;
+    padding: 0.50rem;
+    margin-left: 1rem;
+}
+
+/*SECTION*/
+
+section{
+    display: grid;
+    grid-template-columns: 5% 2fr;
+}
+
+.sidebar{
+    padding-top: 10rem;
+}
+
+.sidebar a{
+    display: block;
+    text-align: center;
+    margin: 1rem;
+    color: #828F9D;
+    border-radius: 6px;
+    padding: 5px;
+
+}
+
+.sidebar a:nth-child(3){
+    color: #F16623;
+    background: #161920;
+}
+
+.callvideo{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+
+/*TIMER AND ADD USER*/
+
+.rec{
+    padding: 1rem 2rem 0 2em;
+    justify-content: space-between;
+    display: flex;
+}
+
+.rec button{
+    border: 0;
+    background: transparent;
+    color: #828F9D;
+}
+
+/*VIDEO*/
+
+.video{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    height: 500px;
+    padding: 2rem;
+    overflow-x: scroll;
+}
+.video_{
+    background: #242424;
+    border: 1px solid #777777;
+    border-radius: 30px;
+    padding: 1rem;
+}
+
+
+
+.video_:nth-child(2){
+    border: 1px solid #777777;
+    border-radius: 30px;
+    padding: 1rem;
+}
+
+
+
+.video_:nth-child(even){
+    background-image: url(../itenss/a.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.video_{
+    background-image: url(../itenss/b.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.profile{
+    height: 50px;
+    width: 50px;
+    float: right;
+    border-radius: 100px;
+    border: 1px solid #757575;
+    background: url(/itens/user.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.profile:nth-child(2){
+    padding: 0.50rem;
+    background: transparent;
+    border: 5px solid #979797;
+    border-style: double;
+    animation: s 1s alternate infinite;
+}
+
+.circle{
+    background: #0000008c;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 700;
+}
+
+
+/*/
+@keyframes s{
+    0%{
+        transform: scale(1.1);
+    }
+}
+/*ICONEES*/
+
+.iconees{
+    text-align: center;
+    height: 50px;
+    font-size: 15px;
+}
+
+.iconees a{
+    color: #828F9D;
+    padding: 1rem;
+    margin: 0.20rem;
+    background: #0b0c0f;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.iconees a:nth-child(3){
+    color: #ffffff;
+    background: #ff0000;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 700px){
+    .video{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
